@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <><h1>i am starting again </h1>
-    
-    </>
-  )
+function btnClicked(){
+  console.log("i am clicked");
 }
 
-export default App
+export const App = () => {
+  return (
+    <div>App
+
+      <button onClick={btnClicked}>Clisk here</button>
+    </div>
+  )
+}
