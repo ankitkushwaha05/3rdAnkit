@@ -1,12 +1,12 @@
 import React from 'react'
 
-function btnClicked(){
-  console.log("i am clicked");
-}
- function inputChanging(elem) {
-        console.log(val);
+// function btnClicked(){
+//   console.log("i am clicked");
+// }
+//  function inputChanging(elem) {
+//         console.log(val);
         
-      }
+//       }
 export const App = () => {
   return (
     <div>
@@ -18,12 +18,14 @@ export const App = () => {
       <h1>this is button</h1> */}
 
      
-      <input onChange={function(elem){
+      {/* <input onChange={function(elem){
         console.log(elem.target.value)
       }} 
       type="text"
-      placeholder='Enter name' />
-
+      placeholder='Enter name' /> */}
+      <div onMouseMove={() =>{
+        console.log('elem');
+      }} className='box'></div>
 
     </div>
   )
