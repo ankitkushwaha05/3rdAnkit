@@ -7,9 +7,13 @@ import React from 'react'
 //         console.log(val);
         
 //       }
+
+const pageScrolling = =>{
+  console.log("i am entring form");
+}
 export const App = () => {
   return (
-    <div>
+    <div onScroll={}>
 
       {/* <button onDoubleClick={btnClicked}>Clisk here</button>
       <button onClick={function(){
@@ -23,13 +27,26 @@ export const App = () => {
       }} 
       type="text"
       placeholder='Enter name' /> */}
-      <div onMouseMove={() =>{
+      {/* <div onMouseMove={() =>{
         console.log('elem');
-      }} className='box'></div>
+      }} className='box'></div> */}
+
+      <div className="page1">
+
+      </div>
+      <div className="page2"></div>
+      <div className="page3"></div>
 
     </div>
   )
 }
+<form action="">
+  <input type="text" placeholder='Enter your name'/>
+  <input type="text" placeholder='Enter your Email Id' />
+  <input type="number" placeholder='Emter your number'/>
+  <input type="text" placeholder='Enter your Perfect Message '/>
+  <input type="text" />
+</form>
 export default App;
 
 // chal coffee piwayenge 
