@@ -1,31 +1,29 @@
 import React, { useState } from 'react'
 
+export const App = () => {
 
+  const [title, setTitle] = useState('')
 
-const App = () => {
-  
-  
-  const [num, setNum] = useState(0)
-
-  function increaseNum(){
-    setNum(num+1);
-
-  }
-  function decreaseNum(){
-    setNum(num-1);
-  }
-  function jump5num(){
-    setNum(num+5)
+  const submitHandler = (e)=>{
+    e.preventDefault()
+    console.log("form submited");
   }
 
   return (
-    <>
-    <h1>{num}</h1>
-    <button onClick={increaseNum}>increase</button>
-    <button onClick={decreaseNum}>decrease</button>
-    <button onClick={jump5num}>Incress by 5</button>
-    </>
+    <div>
+      <form onSubmit={(e)=>{
+        submitHandler(e)
+      }}>
+        <input 
+        type="text" 
+        placeholder='Enter your name' onChange={(e)=>{
+          console.log("e.target.value");
+        }}
+        />
+        <button>Submit</button>
+      </form>
+    </div>
   )
 }
 
-export default App; 
+export default App 
